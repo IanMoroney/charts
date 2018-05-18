@@ -20,11 +20,6 @@ data:
 
     network.host: 0.0.0.0
 
-    cloud:
-      kubernetes:
-        service: ${SERVICE}
-        namespace: ${KUBERNETES_NAMESPACE}
-
 {{- if hasPrefix "2." .Values.appVersion }}
     # see https://github.com/kubernetes/kubernetes/issues/3595
     bootstrap.mlockall: ${BOOTSTRAP_MLOCKALL:false}
