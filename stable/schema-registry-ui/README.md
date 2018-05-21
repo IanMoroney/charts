@@ -27,7 +27,7 @@ $ helm install --name srui incubator/schema-registry-ui
 
 If you do not specify a name, helm will select a name for you.
 
-```console{%raw}
+```console
 $ kubectl get all -l app=schema-registry-ui
 NAME                          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 deploy/srui-schema-registry-ui   1         1         1            1           23m
